@@ -6,13 +6,13 @@ export default function Categoria() {
     const router = useRouter();
     const { categoria, id } = router.query
 
-    function enviarFormulario() {
+    function submitForm() {
         router.push('/produtos/sucesso')
     }
 
     return <div> Categoria - { categoria }
 
-        <button onClick={enviarFormulario}> Enviar Formulário   </button>
+        <button onClick={submitForm}> Enviar Formulário   </button>
         
         <ul>
             <li>
